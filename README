@@ -1,0 +1,11 @@
+# Add the following lines to your i3 config to run the script as a hotkey
+# Also be sure to change the permissions of your gmux_backlight/brightness to execute without su
+
+# Feel free to adjust the value in the blInc and blDec scripts
+# default of 1000 might be too small of a step
+
+# Be sure to look at the values of brightness and max_brightness, and adjust values in these scripts accordingly
+
+#Brightness Control
+bindsym $mod+F1 exec /home/dan/backlightScript/blDec
+bindsym $mod+F2 exec /home/dan/backlightScript/blInc
