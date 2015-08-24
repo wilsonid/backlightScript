@@ -1,6 +1,0 @@
-#!/bin/bash
-INC=$(expr 10000)
-OUTPUT="$(cat /sys/class/backlight/gmux_backlight/brightness)"
-RESULT=$(expr $OUTPUT - $INC)
-
-echo $RESULT | tee /sys/class/backlight/gmux_backlight/brightness
