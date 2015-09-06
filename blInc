@@ -1,5 +1,5 @@
 #!/bin/bash
-INC=$(expr 1000)
+INC=$(expr 2000)
 OUTPUT="$(cat /sys/class/backlight/gmux_backlight/brightness)"
 RESULT=$(expr $OUTPUT + $INC)
 
